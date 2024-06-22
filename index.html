@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Turismos</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <div class="flex-container menu">
+            <div>
+                <h1>PORTAL SOBRE AS QUEIMADAS NO BRASIL</h1>
+            </div>
+            <ul class="list-items">
+                <li><a href="#quem-somos">Home</a></li>
+                <br>
+                <li><a href="#planos">Insights</a></li>
+                <br>
+                <li><a href="#servicos">Cadastra-se</a></li>
+            </ul>
+        </div>
+    </header>
+    <br>
+
+    <div class="flex-container" id="quem-somos">
+        <div>
+            <h2>Quem somos</h2>
+            <p>Somos uma equipe dedicada a conscientizar sobre as queimadas no Brasil.
+                Apresentamos insights obtidos a partir da análise de dados e disponibilizamos essas informações através
+                desse portal.</p>
+        </div>
+        <div>
+            <img src="./images/quemsomos.jpg" alt="balcão de atendimento">
+        </div>
+    </div>
+
+    <div class="flex-container" id="planos">
+        <div>
+            <h1>Artigos</h1>
+        </div>
+        <br>
+        <div>
+            <h2>Artigo 01</h2>
+            <br>
+            <p>Para realizar a transformação dos dados, será utilizado o Power BI. Os dados
+                foram importados através do site INPE (Instituto Nacional de Pesquisas Espaciais),
+                disponível em: <a
+                    href="https://terrabrasilis.dpi.inpe.br/queimadas/bdqueimadas/">https://terrabrasilis.dpi.inpe.br/queimadas/bdqueimadas/</a>.
+            </p>
+            <br>
+            <p>Conforme evidenciado na imagem abaixo, realizou-se uma análise quantitativa
+                abrangendo todo o território nacional. Examinamos os dados por meio de diversas
+                perspectivas, incluindo biomas, cidades e estados.</p>
+            <br>
+            <ul>
+                <li>Em relação aos biomas, a Caatinga destaca-se como o mais impactado,
+                    apresentando, em média, 19 dias sem chuvas e uma taxa de risco de incêndio
+                    de 30,52%.</li>
+
+                <li>Em relação às cidades, aquelas situadas no Norte e Nordeste do país
+                    apresentam um risco mais elevado de queimadas. Exemplos notáveis incluem
+                    Bujari, Rio Branco e Sena, localizadas no Acre, e Maragogi e Paripueira,
+                    situadas em Alagoas.</li>
+
+                <li>Em relação aos Estados mais afetados por falta de chuva são
+                    respectivamente, Sergipe, Ceará, Rio do Grande do Norte, Bahia e Paraíba.</li>
+            </ul>
+            <br>
+            <p>
+                <img src="./images/img1.jpg" alt="Análise de dados" style="width: 100%; max-width: 100%;">
+                <figcaption>Figura 01: À esquerda, a média de dias sem chuva é apresentada para cada bioma: Caatinga, Cerrado, Mata Atlântica e Amazônia. À direita, a média de dias sem chuva é detalhada para cada estado.</figcaption>
+
+            </p>
+            <br>
+            <p>
+                <img src="./images/img2.jpg" alt="Análise de dados" style="width: 100%; max-width: 100%;">
+                <figcaption>Figura 02: Risco de fogo por bioma.</figcaption>
+            </p>
+            <br>
+
+        </div>
+    </div>
+
+    <div class="container-externo">
+        <div class="flex-container" id="servicos">
+            <div>
+                <h2>Cadastra-se para receber mais informações</h2>
+            </div>
+            <div class="form-group">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" id="sobrenome" name="sobrenome" required>
+            </div>
+            <div class="form-group">
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="btCadastrar">Cadastrar</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="flex-container footer">
+            <p>&copy; 2024 </p>
+            <p>Desenvolvido por: Amanda Dourado</p>
+        </div>
+    </footer>
+    <script src="js.js"></script>
+
+</body>
+
+</html>
